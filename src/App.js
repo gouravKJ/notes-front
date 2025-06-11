@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
 
-  const API_BASE = 'https://notes-backend-m1o7.onrender.com//api';
+  const API_BASE = 'https://notes-backend-m1o7.onrender.com/api';
 
 
 function App() {
