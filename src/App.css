@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0fdf4;
+  transition: background 0.3s, color 0.3s;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #065f46;
+}
+
+.note-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #d1fae5;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #a7f3d0;
+  margin-bottom: 2rem;
+}
+
+.note-input input,
+.note-input textarea {
+  padding: 10px;
+  border: 1px solid #10b981;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.note-input button {
+  background-color: #10b981;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.note-input button:hover {
+  background-color: #059669;
+}
+
+.notes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.note {
+  flex: 1 1 250px;
+  background: #ecfdf5;
+  border-left: 5px solid #10b981;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+
+.note h2 {
+  margin-top: 0;
+  color: #047857;
+}
+
+.note p {
+  margin: 0.5rem 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.actions button {
+  background: #6ee7b7;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.actions button:hover {
+  background: #34d399;
+}
+
+.theme-toggle {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.theme-toggle button {
+  background: #065f46;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.theme-toggle button:hover {
+  background: #047857;
+}
+
+/* Dark Mode (Green theme) */
+.dark {
+  background-color: #022c22;
+  color: #d1fae5;
+}
+
+.dark .note-input,
+.dark .note {
+  background-color: #064e3b;
+  color: #d1fae5;
+  border-left-color: #34d399;
+}
+
+.dark input,
+.dark textarea {
+  background-color: #065f46;
+  color: #ecfdf5;
+  border: 1px solid #34d399;
+}
+
+.dark .note-input button,
+.dark .actions button {
+  background-color: #10b981;
+  color: #ecfdf5;
+}
+
+.dark .note-input button:hover,
+.dark .actions button:hover {
+  background-color: #059669;
+}
+
+.dark .theme-toggle button {
+  background: #047857;
+  color: #d1fae5;
+}
