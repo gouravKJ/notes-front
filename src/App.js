@@ -23,7 +23,7 @@ function App() {
   }
 
   const addorupdatenote=async()=>{
-    if(!title.trim() || !content.trim) return;
+    if(!title.trim() || !content.trim()) return;
 
 
     if(editingnote){
@@ -86,7 +86,7 @@ function App() {
 
        </div>
 
-       <div classname='notes-list'>
+       <div className='notes-list'>
         {notes.map(note=>(
           <div key={note._id} className='note'>
             <h2>{note.title}</h2>
